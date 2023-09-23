@@ -2,14 +2,14 @@
 The aim is to construct renewable energy sites out of a pool of 50 simulated sites by identifying those that can be procured based on available staffing resources. The simulated potential sites, and resulting staff hours data was created with the help of Chatgpt4. 
 By implementing a linear optimization approach, the analysis recommends the acquisition of 22 sites.
 
-# My baseline case study
+# Baseline case study
 I initially identified 50 potential sites that can be acquired for renewables production, amounting to a total of 2,382 MW production of electricity by April 2032 (considering a standard of 9 years for the project to be set up). Among the sites thus identified, the largest electricity producers in terms of MW are windmills, while BESS accounts for the smallest producer segments. However, I posit the production of renewables in all these 50 sites at the same time is an unrealistic target to be achieved in this period, given both staffing and programmatic constraints. 
 
 To begin with, there is a huge gap between staff required and present staff numbers to meet the demands of all these sites in the next 9 years. While this could be a factor toward initiating recruitment drives, I find myself less inclined to ask of the company that it hires more people immediately to meet the demands of the staffing requirements of all 50 sites. This is evident since the staff expansion required is to degrees much higher than the present staff numbers. Especially in the case of managerial roles the staffing hours deficit is about three times if we were to pursue all 50 sites at the same time.  
 
 Thus, my focus shifted toward looking at an optimal solution first based on present staff numbers and using that as a baseline for future development of projects. Furthermore, I believe out optimization methodology can be used company wide, to account for project feasibility, for staffing resource optimization, and in choosing long term projects. 
 
-# My Methodology 
+# Methodology 
 
 I have already established the potential energy capacity that can be produced out of each of the renewable site, and the staffing hours required out of each of the roles for each of the different technologies, namely BESS SPP, Solar, Wind plants with less than 50 MW capacity, and Wind plants with more than 50 MW capacity. Here, the staffing requirements is only a function of the type of technology employed, and unaffected by the size of the project. Interestingly, I find that the number of managerial hours required in Wind projects is much more than for Solar and BESS (see Figure 7). Wind technologies with more than 50 MW capacity demand the most staff hours from all job roles, while I have also seen they are among the highest electricity producers. Additionally, taking energy capacity into our model at this stage is counterintuitive, as we won’t be able to do linear programming (since for the same staffing inputs for each technology, given everything else as constant, our data suggests different outputs in terms of energy production). Thus, I will account for energy capacities at a later stage in the model. 
 
