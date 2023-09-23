@@ -1,5 +1,5 @@
 # Energy_project_allocation
-The aim is to construct renewable energy sites out of a pool of 50 simulated sites by identifying those that can be procured based on available staffing resources. The simulated potential sites, and resulting staff hours data was created with the help of Chatgpt4. 
+The aim is to identify which renewable energy sites to pursue out of a pool of 50 simulated sites by identifying those that can be procured based on available staffing resources and by aiming for a dievrse pool of sites. The simulated potential sites, and resulting staff hours data were created with the help of Chatgpt4. 
 By implementing a linear optimization approach, the analysis recommends the acquisition of 22 sites.
 
 # Baseline case study
