@@ -1,0 +1,238 @@
+---
+title: "Allocation of staff hours to various energy projects"
+output: rmarkdown::github_document
+---
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  fig.path = "/Users/kevin/Desktop/DAIP/Case 6/graphs")
+```
+
+
+
+```{r}
+rm(list = ls())
+library(ggplot2)
+library(tidyverse)
+library(dplyr)
+#library(hrbrthemes)
+setwd("~/Desktop/DAIP/Case 6")
+
+hours_needed <- read.csv(file = 'combined.csv', header=TRUE)
+potential_sites <- read.csv(file = 'potential_sites.csv', header=TRUE)
+staff <- read.csv(file= "staff.csv", header = TRUE)
+
+```
+
+
+```{r}
+#Total staff hours needed for each technology (irrespective of the size of the project)
+hours_by_tech <- hours_needed %>%
+  group_by(Technology, Role) %>%
+  summarise(total_hours = sum(Sum.of.Hours))
+
+ggplot(hours_by_tech, aes(y=total_hours, x=Role , fill=Technology)) +
+  geom_bar(position="dodge", stat="identity")+
+  coord_flip()+
+  ggthemes::scale_fill_ptol()+
+  #ggtitle("Number of hours required on 1 project from each employee")+
+  labs(y="Total number of hours")
+
+```
+
+#All 50 Potential sites 
+```{r}
+#Making some changes to the potential sites dataset, to accomodate inner join later 
+
+potential_sites$Technology[potential_sites$Technology == "Solar"] <- "SOLAR"
+potential_sites$Technology[potential_sites$MW >=50 & potential_sites$Technology=="Wind" ] <- "Wind >=50MW SPP"
+potential_sites$Technology[potential_sites$MW <50 & potential_sites$Technology=="Wind" ] <- "Wind <50MW SPP"
+potential_sites$Technology[potential_sites$Technology == "BESS"] <- "BESS SPP"
+
+##Overseeing the number of technologies employed in the sites and total production
+
+potential_sites %>%
+  group_by(Technology) %>%
+  summarise(n = n(), production=sum(MW))
+
+#Average production by technology
+potential_sites %>%
+  group_by(Technology) %>%
+  summarise(n = n(), production=mean(MW))
+
+ggplot(potential_sites, aes(x=MW))+
+  geom_histogram(aes(fill=Technology), position = "identity", bins = 5)+
+  facet_wrap(~Technology)+
+  theme_minimal()+
+  ggthemes::scale_fill_ptol()
+
+```
+
+```{r}
+#Staff & number of hours required for all of the 50 hours 
+
+#Joining all 50 sites to the people required and their hours 
+all_fifty <- potential_sites %>%
+  inner_join(hours_by_tech, by="Technology", multiple = "all")
+
+#Calculating number of total hours required for all 50 sites from each role 
+role_wise_hours <- all_fifty %>%
+  group_by(Role) %>%
+  summarise(aggregate_hours=sum(total_hours))
+
+```
+
+
+
+
+```{r}
+#Staff list
+staff %>%
+  group_by(Role) %>%
+  summarise(n=n())
+
+#Calculate number of hours available per job role for 9 years 
+available <- staff %>%
+  group_by(Role) %>%
+  summarise(Number_of_staff = n(), aggregate_available=sum(X9_years_availability))
+
+#Creating new dataframe with availability of hours and requirement 
+
+allocation <- available %>%
+  inner_join(role_wise_hours, by="Role")
+
+#Making dataset into longer format 
+allocation_longer= pivot_longer(data = allocation, cols = c(aggregate_hours,aggregate_available), names_to = "requirement", values_to = "hours")
+
+#To get rid of the scientific notations 
+options(scipen=5)
+
+ggplot(allocation_longer, aes(fill=requirement, y=hours, x=requirement)) + 
+  geom_bar(position="dodge", stat="identity") +
+  facet_wrap(~Role) +
+  xlab("")+
+  theme_minimal()+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1), axis.ticks.y = element_blank(),
+        axis.text.y = element_blank())+
+  coord_flip()+
+  ggthemes::scale_fill_ptol(name="Staff hours allocated", 
+                    labels = c("Hours available", "Hours needed"))
+  #ggtitle("Aggregate staff hours needed and available for next 9 years")
+
+```
+
+
+
+```{r}
+allocation$max_hours_per_person = 15318
+allocation$hours_left=allocation$aggregate_hours-allocation$aggregate_available
+allocation$people_needed=allocation$hours_left/allocation$max_hours_per_person
+write_csv(allocation, "~/Desktop/DAIP/Case 6/people_needed_for_50.csv")
+
+```
+
+```{r}
+allocation_new <- data.frame(allocation$Role, allocation$Number_of_staff, allocation$people_needed)
+
+#Making dataset into longer format 
+allocation_longer2= pivot_longer(data = allocation_new, cols = c(allocation.Number_of_staff, allocation.people_needed), names_to = "People", values_to = "value")
+
+allocation_longer2 %>% 
+  filter(value>0) %>%
+  ggplot(aes(y=value, x=allocation.Role , fill=People)) +
+  geom_bar(position="dodge", stat="identity")+
+  coord_flip()+
+  ggthemes::scale_fill_ptol(name="Number of staff", 
+                    labels = c("Present staff", "New hires required"))+
+  labs(x="Role")
+  #ggtitle("Present number of staff vs more required")
+  #scale_fill_manual(labels=c("Present staff numbers", "Requirement of staff"))
+
+```
+OPTIMIZATION PROBLEM : Finding which energy technologies to invest in given staff hours available 
+```{r}
+##Optimization problem
+
+#Hours of the team required for each of the technology 
+hours_needed_tech <- hours_by_tech %>%
+  group_by(Technology) %>%
+  summarise(hours = sum(total_hours))
+
+
+opt <- all_fifty %>%
+  select(Site, Technology, MW, Role, total_hours)
+sum(available$aggregate_available)
+
+```
+
+```{r}
+#Optimize
+library(lpSolve)
+
+f.obj <- c(1, 1, 1, 1)
+
+const.mat <- matrix(c(13786, 0, 0, 0, 
+                      13786, 17083, 0, 0, 
+                      13786, 17083, 24315, 0, 
+                      13786, 17083, 24315, 28382, 
+                      1, 0, 0, 0, 
+                      0, 1, 0, 0, 
+                      0, 0, 1, 0, 
+                      0, 0, 0, 1) , ncol=4 , byrow=TRUE) 
+f.dir <- c(rep("<=", 8))
+f.rhs <- c(411288, 411288, 411288, 411288, 6, 11, 21, 12)
+
+lp("max", f.obj, const.mat, f.dir, f.rhs, int.vec = 1:8)
+
+lp("max", f.obj, const.mat, f.dir, f.rhs, int.vec = 1:8)$solution
+
+
+```
+```{r}
+#Optimize
+library(lpSolve)
+
+f.obj <- c(1, 1, 1, 1)
+
+const.mat <- matrix(c(13786, 0, 0, 0, 
+                      13786, 17083, 0, 0, 
+                      13786, 17083, 24315, 0, 
+                      13786, 17083, 24315, 28382, 
+                      1, 0, 0, 0, 
+                      0, 1, 0, 0, 
+                      0, 0, 1, 0, 
+                      0, 0, 0, 1, 
+                      1, 0, 0, 0, 
+                      0, 1, 0, 0, 
+                      0, 0, 1, 0, 
+                      0, 0, 0, 1), ncol=4 , byrow=TRUE)
+
+f.dir <- c("<=","<=","<=","<=","<=","<=","<=","<=",">=", ">=", ">=", ">=")
+
+f.rhs <- c(411288, 411288, 411288, 411288, 6, 11, 21, 12, 1, 1, 1, 1)
+
+lp("max", f.obj, const.mat, f.dir, f.rhs, int.vec = 1:12)
+
+lp("max", f.obj, const.mat, f.dir, f.rhs, int.vec = 1:12)$solution
+
+
+```
+
+
+```{r}
+potential_sites %>%
+  group_by(Technology, MW) %>%
+  arrange((desc(MW))) %>%
+  top_n(n = 11)
+
+potential_sites %>%
+  group_by(Technology) %>%
+  slice_max(order_by = MW, n = 11)
+```
+
+
+
+
+
+
+
