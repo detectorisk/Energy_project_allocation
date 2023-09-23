@@ -1,0 +1,51 @@
+﻿#,Site,Latitude,Longtitude,Technology,MW
+1, Loch Doon, 55.2841° N, 4.3762° W,Wind,200
+2, Galloway Forest Park, 55.0399° N, 4.3234° W,Wind,50
+3, Carrick Forest Drive, 55.1683° N, 4.6357° W,Wind,35
+4, Straiton Pond, 55.2392° N, 4.5411° W,Solar,85
+5, Glenapp Castle, 55.0576° N, 4.9456° W,BESS,20
+6, Ailsa Craig, 55.2489° N, 5.1397° W,Solar,80
+7, Lady Hunter Blair's Garden, 55.2461° N, 4.5449° W,Wind,50
+8, Largs Beach, 55.7963° N, 4.8637° W,Wind,35
+9, Culzean Castle Country Park, 55.3513° N, 4.8107° W,Wind,60
+10, Ardwell Gardens, 54.8343° N, 4.9567° W,Solar,53
+11, Heads of Ayr Farm Park, 55.4117° N, 4.6908° W,Wind,20
+12, Muirkirk Estate, 55.5171° N, 4.1112° W,Wind,20
+13, Lochwinnoch Nature Reserve, 55.7863° N, 4.6262° W,Wind,10
+14, Doonfoot Beach, 55.3299° N, 4.6519° W,BESS,25
+15, Dalgarven Mill, 55.7265° N, 4.6105° W,Solar,30
+16, Eglinton Country Park, 55.6384° N, 4.5899° W,Wind,15
+17, Glenkiln Sculpture Walk, 55.1417° N, 3.8498° W,Wind,95
+18, Straiton Pond Nature Reserve, 55.2392° N, 4.5411° W,Wind,45
+19, Loch Bradan, 55.1711° N, 5.0486° W,Solar,20
+20, Blairquhan Castle, 55.2655° N, 4.6575° W,BESS,20
+21, Malham Cove, 54.0708° N, 2.1539° W,Wind,45
+22, Aysgarth Falls, 54.3054° N, 1.9481° W,Wind,65
+23, Ribblehead Viaduct, 54.2054° N, 2.3618° W,Solar,15
+24, Studley Royal Water Garden, 54.1368° N, 1.5596° W,BESS,25
+25, Gordale Scar, 54.0609° N, 2.1635° W,BESS,35
+26, Brimham Rocks, 54.0868° N, 1.6569° W,Wind,95
+27, Flamborough Head, 54.1136° N, 0.1226° W,Wind,55
+28, Hardcastle Crags, 53.7666° N, 2.0116° W,Solar,65
+29, Sutton Bank National Park Centre, 54.2386° N, 1.2146° W,Solar,25
+30, Yorkshire Dales National Park, 54.2436° N, 2.1416° W,Solar,30
+31, Ben Nevis, 56.7969° N, 5.0037° W,Wind,45
+32, Glenfinnan Viaduct, 56.8727° N, 5.4317° W,Wind,90
+33, Eilean Donan Castle, 57.2749° N, 5.5169° W,Wind,20
+34, Culloden Battlefield, 57.4797° N, 4.0719° W,Wind,45
+35, Loch Ness, 57.3229° N, 4.4244° W,Wind,150
+36, Cairngorms National Park, 57.1114° N, 3.6674° W,Wind,45
+37, Isle of Skye, 57.5359° N, 6.2263° W,Wind,28
+38, Inverness Castle, 57.4778° N, 4.2247° W,Wind,18
+39, Glen Coe, 56.6827° N, 5.0179° W,Wind,75
+40, Caledonian Canal, 57.0917° N, 4.6961° W,Solar,40
+41, Stonehenge, 51.1789° N, 1.8262° W,Wind,15
+42, New Forest National Park, 50.8763° N, 1.6327° W,Wind,15
+43, Seven Sisters Country Park, 50.7589° N, 0.1563° E,Wind,38
+44, Avebury Stone Circle, 51.4281° N, 1.8542° W,Wind,35
+45, South Downs National Park, 50.9010° N, 0.9039° W,Solar,45
+46, Chiltern Hills, 51.6945° N, 0.9785° W,Wind,42
+47, Polesden Lacey, 51.2641° N, 0.3995° W,Wind,85
+48, Isle of Wight, 50.6927° N, 1.3147° W,Wind,42
+49, Dorset AONB, 50.7257° N, 2.3597° W,Wind,46
+50, Cranborne Chase AONB, 50.9754° N, 2.0032° W,BESS,40

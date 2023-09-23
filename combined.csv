@@ -1,0 +1,169 @@
+﻿Technology ,Stage,Role,Sum of Hours,Hourly pay 
+BESS SPP,1. Site Identification & Evaluation,Assistant Project Manager,21.06225,14.87179487
+BESS SPP,1. Site Identification & Evaluation,New Business Manager,22.977,30.76923077
+BESS SPP,1. Site Identification & Evaluation,Project Manager,88.0785,27.17948718
+BESS SPP,2. Feasibility & Grid Connection,Assistant Project Manager,84.249,14.87179487
+BESS SPP,2. Feasibility & Grid Connection,Project Manager,88.0785,27.17948718
+BESS SPP,2. Feasibility & Grid Connection,Senior Project Manager,91.908,31.79487179
+BESS SPP,3. Environmental Impact Assessment,Assistant Project Manager,1053.1125,14.87179487
+BESS SPP,3. Environmental Impact Assessment,Project Manager,1100.98125,27.17948718
+BESS SPP,3. Environmental Impact Assessment,Senior Project Manager,229.77,31.79487179
+BESS SPP,4. Planning phase - pre consent,Assistant Project Manager,294.8715,14.87179487
+BESS SPP,4. Planning phase - pre consent,Project Manager,308.27475,27.17948718
+BESS SPP,4. Planning phase - pre consent,Senior Project Manager,91.908,31.79487179
+BESS SPP,5. Planning phase - post consent,Assistant Project Manager,294.8715,14.87179487
+BESS SPP,5. Planning phase - post consent,Project Manager,308.27475,27.17948718
+BESS SPP,5. Planning phase - post consent,Senior Project Manager,91.908,31.79487179
+BESS SPP,6. Land Agreements,Assistant Project Manager,21.06225,14.87179487
+BESS SPP,6. Land Agreements,New Business Manager,22.977,30.76923077
+BESS SPP,6. Land Agreements,Project Manager,88.0785,27.17948718
+BESS SPP,7. Layout Support & Modelling,Assistant Project Manager,315.93375,14.87179487
+BESS SPP,7. Layout Support & Modelling,Civil Engineer,42.1245,14.92307692
+BESS SPP,7. Layout Support & Modelling,Electrical Engineer,210.6225,14.92307692
+BESS SPP,7. Layout Support & Modelling,Energy Yield Engineer,0,14.92307692
+BESS SPP,7. Layout Support & Modelling,Project Manager,330.294375,27.17948718
+BESS SPP,7. Layout Support & Modelling,Senior C&I Engineer,330.294375,26.15384615
+BESS SPP,7. Layout Support & Modelling,Senior Electrical Engineer,220.19625,26.15384615
+BESS SPP,7. Layout Support & Modelling,Senior Project Manager,160.839,31.7948718
+BESS SPP,8. Contract Tendering & Design,Assistant Project Manager,210.6225,14.87179487
+BESS SPP,8. Contract Tendering & Design,Civil Engineer,105.31125,14.92307692
+BESS SPP,8. Contract Tendering & Design,Electrical Engineer,210.6225,14.92307692
+BESS SPP,8. Contract Tendering & Design,Energy Yield Engineer,0,14.92307692
+BESS SPP,8. Contract Tendering & Design,Project Manager,220.19625,27.17948718
+BESS SPP,8. Contract Tendering & Design,Senior C&I Engineer,220.19625,26.15384615
+BESS SPP,8. Contract Tendering & Design,Senior Electrical Engineer,220.19625,26.15384615
+BESS SPP,8. Contract Tendering & Design,Senior Project Manager,114.885,31.7948718
+BESS SPP,9. Construction & Commissioning,Assistant Project Manager,1684.98,14.87179487
+BESS SPP,9. Construction & Commissioning,Civil Engineer,42.1245,14.92307692
+BESS SPP,9. Construction & Commissioning,Electrical Engineer,631.8675,14.92307692
+BESS SPP,9. Construction & Commissioning,Energy Yield Engineer,0,14.92307692
+BESS SPP,9. Construction & Commissioning,Project Manager,1761.57,27.17948718
+BESS SPP,9. Construction & Commissioning,Senior C&I Engineer,880.785,26.15384615
+BESS SPP,9. Construction & Commissioning,Senior Electrical Engineer,880.785,26.15384615
+BESS SPP,9. Construction & Commissioning,Senior Project Manager,689.31,31.7948718
+SOLAR,1. Site Identification & Evaluation,Assistant Project Manager,42.1245,14.87179487
+SOLAR,1. Site Identification & Evaluation,New Business Manager,45.954,30.76923077
+SOLAR,1. Site Identification & Evaluation,Project Manager,66.058875,27.17948718
+SOLAR,2. Feasibility & Grid Connection,Assistant Project Manager,210.6225,14.87179487
+SOLAR,2. Feasibility & Grid Connection,Project Manager,220.19625,27.17948718
+SOLAR,2. Feasibility & Grid Connection,Senior Project Manager,229.77,31.79487179
+SOLAR,3. Environmental Impact Assessment,Assistant Project Manager,1263.735,14.87179487
+SOLAR,3. Environmental Impact Assessment,Project Manager,1100.98125,27.17948718
+SOLAR,3. Environmental Impact Assessment,Senior Project Manager,229.77,31.79487179
+SOLAR,4. Planning phase - pre consent,Assistant Project Manager,294.8715,14.87179487
+SOLAR,4. Planning phase - pre consent,Project Manager,308.27475,27.1794872
+SOLAR,4. Planning phase - pre consent,Senior Project Manager,91.908,31.79487179
+SOLAR,5. Planning phase - post consent,Assistant Project Manager,294.8715,14.87179487
+SOLAR,5. Planning phase - post consent,Project Manager,308.27475,27.1794872
+SOLAR,5. Planning phase - post consent,Senior Project Manager,91.908,31.79487179
+SOLAR,6. Land Agreements,Assistant Project Manager,21.06225,14.87179487
+SOLAR,6. Land Agreements,New Business Manager,22.977,30.76923077
+SOLAR,6. Land Agreements,Project Manager,55.0490625,27.1794872
+SOLAR,7. Layout Support & Modelling,Assistant Project Manager,315.93375,14.87179487
+SOLAR,7. Layout Support & Modelling,Civil Engineer,42.1245,14.92307692
+SOLAR,7. Layout Support & Modelling,Electrical Engineer,210.6225,14.92307692
+SOLAR,7. Layout Support & Modelling,Energy Yield Engineer,430.81875,14.92307692
+SOLAR,7. Layout Support & Modelling,Project Manager,330.294375,27.1794872
+SOLAR,7. Layout Support & Modelling,Senior C&I Engineer,330.294375,26.15384615
+SOLAR,7. Layout Support & Modelling,Senior Electrical Engineer,330.294375,26.15384615
+SOLAR,7. Layout Support & Modelling,Senior Project Manager,160.839,31.79487179
+SOLAR,8. Contract Tendering & Design,Assistant Project Manager,210.6225,14.87179487
+SOLAR,8. Contract Tendering & Design,Civil Engineer,105.31125,14.92307692
+SOLAR,8. Contract Tendering & Design,Electrical Engineer,210.6225,14.92307692
+SOLAR,8. Contract Tendering & Design,Energy Yield Engineer,430.81875,14.92307692
+SOLAR,8. Contract Tendering & Design,Project Manager,220.19625,27.1794872
+SOLAR,8. Contract Tendering & Design,Senior C&I Engineer,110.098125,26.15384615
+SOLAR,8. Contract Tendering & Design,Senior Electrical Engineer,220.19625,26.15384615
+SOLAR,8. Contract Tendering & Design,Senior Project Manager,114.885,31.79487179
+SOLAR,9. Construction & Commissioning,Assistant Project Manager,2316.8475,14.87179487
+SOLAR,9. Construction & Commissioning,Civil Engineer,84.249,14.9230769
+SOLAR,9. Construction & Commissioning,Electrical Engineer,631.8675,14.9230769
+SOLAR,9. Construction & Commissioning,Energy Yield Engineer,344.655,14.9230769
+SOLAR,9. Construction & Commissioning,Project Manager,1981.76625,27.1794872
+SOLAR,9. Construction & Commissioning,Senior C&I Engineer,990.883125,26.15384615
+SOLAR,9. Construction & Commissioning,Senior Electrical Engineer,1211.079375,26.15384615
+SOLAR,9. Construction & Commissioning,Senior Project Manager,850.149,31.79487179
+Wind <50MW SPP,1. Site Identification & Evaluation,Assistant Project Manager,63.18675,14.87179487
+Wind <50MW SPP,1. Site Identification & Evaluation,New Business Manager,68.931,30.76923077
+Wind <50MW SPP,1. Site Identification & Evaluation,Project Manager,286.255125,27.17948718
+Wind <50MW SPP,2. Feasibility & Grid Connection,Assistant Project Manager,526.55625,14.87179487
+Wind <50MW SPP,2. Feasibility & Grid Connection,Project Manager,440.3925,27.17948718
+Wind <50MW SPP,2. Feasibility & Grid Connection,Senior Project Manager,229.77,31.79487179
+Wind <50MW SPP,3. Environmental Impact Assessment,Assistant Project Manager,2000.91375,14.87179487
+Wind <50MW SPP,3. Environmental Impact Assessment,Project Manager,1981.76625,27.17948718
+Wind <50MW SPP,3. Environmental Impact Assessment,Senior Project Manager,689.31,31.79487179
+Wind <50MW SPP,4. Planning phase - pre consent,Assistant Project Manager,842.49,14.87179487
+Wind <50MW SPP,4. Planning phase - pre consent,Project Manager,660.58875,27.17948718
+Wind <50MW SPP,4. Planning phase - pre consent,Senior Project Manager,459.54,31.79487179
+Wind <50MW SPP,5. Planning phase - post consent,Assistant Project Manager,210.6225,14.87179487
+Wind <50MW SPP,5. Planning phase - post consent,Project Manager,220.19625,27.17948718
+Wind <50MW SPP,5. Planning phase - post consent,Senior Project Manager,114.885,31.79487179
+Wind <50MW SPP,6. Land Agreements,Assistant Project Manager,252.747,14.87179487
+Wind <50MW SPP,6. Land Agreements,New Business Manager,275.724,30.76923077
+Wind <50MW SPP,6. Land Agreements,Project Manager,242.215875,27.17948718
+Wind <50MW SPP,7. Layout Support & Modelling,Assistant Project Manager,421.245,14.87179487
+Wind <50MW SPP,7. Layout Support & Modelling,Civil Engineer,42.1245,14.92307692
+Wind <50MW SPP,7. Layout Support & Modelling,Electrical Engineer,421.245,14.92307692
+Wind <50MW SPP,7. Layout Support & Modelling,Energy Yield Engineer,344.655,14.92307692
+Wind <50MW SPP,7. Layout Support & Modelling,Project Manager,440.3925,27.17948718
+Wind <50MW SPP,7. Layout Support & Modelling,Senior C&I Engineer,330.294375,26.15384615
+Wind <50MW SPP,7. Layout Support & Modelling,Senior Electrical Engineer,66.058875,26.15384615
+Wind <50MW SPP,7. Layout Support & Modelling,Senior Project Manager,229.77,31.79487179
+Wind <50MW SPP,8. Contract Tendering & Design,Assistant Project Manager,210.6225,14.87179487
+Wind <50MW SPP,8. Contract Tendering & Design,Civil Engineer,210.6225,14.92307692
+Wind <50MW SPP,8. Contract Tendering & Design,Electrical Engineer,421.245,14.92307692
+Wind <50MW SPP,8. Contract Tendering & Design,Energy Yield Engineer,689.31,14.92307692
+Wind <50MW SPP,8. Contract Tendering & Design,Project Manager,440.3925,27.17948718
+Wind <50MW SPP,8. Contract Tendering & Design,Senior C&I Engineer,220.19625,26.15384615
+Wind <50MW SPP,8. Contract Tendering & Design,Senior Electrical Engineer,220.19625,26.15384615
+Wind <50MW SPP,8. Contract Tendering & Design,Senior Project Manager,114.885,31.79487179
+Wind <50MW SPP,9. Construction & Commissioning,Assistant Project Manager,2316.8475,14.87179487
+Wind <50MW SPP,9. Construction & Commissioning,Civil Engineer,84.249,14.92307692
+Wind <50MW SPP,9. Construction & Commissioning,Electrical Engineer,1684.98,14.92307692
+Wind <50MW SPP,9. Construction & Commissioning,Energy Yield Engineer,516.9825,14.92307692
+Wind <50MW SPP,9. Construction & Commissioning,Project Manager,2422.15875,27.17948718
+Wind <50MW SPP,9. Construction & Commissioning,Senior C&I Engineer,880.785,26.15384615
+Wind <50MW SPP,9. Construction & Commissioning,Senior Electrical Engineer,1100.98125,26.15384615
+Wind <50MW SPP,9. Construction & Commissioning,Senior Project Manager,919.08,31.79487179
+Wind >=50MW SPP,1. Site Identification & Evaluation,Assistant Project Manager,63.18675,14.87179487
+Wind >=50MW SPP,1. Site Identification & Evaluation,New Business Manager,68.931,30.76923077
+Wind >=50MW SPP,1. Site Identification & Evaluation,Project Manager,286.255125,27.17948718
+Wind >=50MW SPP,2. Feasibility & Grid Connection,Assistant Project Manager,526.55625,14.87179487
+Wind >=50MW SPP,2. Feasibility & Grid Connection,Project Manager,440.3925,27.17948718
+Wind >=50MW SPP,2. Feasibility & Grid Connection,Senior Project Manager,229.77,31.79487179
+Wind >=50MW SPP,3. Environmental Impact Assessment,Assistant Project Manager,2106.225,14.87179487
+Wind >=50MW SPP,3. Environmental Impact Assessment,Project Manager,2091.864375,27.17948718
+Wind >=50MW SPP,3. Environmental Impact Assessment,Senior Project Manager,919.08,31.79487179
+Wind >=50MW SPP,4. Planning phase - pre consent,Assistant Project Manager,1053.1125,14.87179487
+Wind >=50MW SPP,4. Planning phase - pre consent,Project Manager,660.58875,27.17948718
+Wind >=50MW SPP,4. Planning phase - pre consent,Senior Project Manager,459.54,31.79487179
+Wind >=50MW SPP,5. Planning phase - post consent,Assistant Project Manager,210.6225,14.87179487
+Wind >=50MW SPP,5. Planning phase - post consent,Project Manager,220.19625,27.17948718
+Wind >=50MW SPP,5. Planning phase - post consent,Senior Project Manager,229.77,31.7948718
+Wind >=50MW SPP,6. Land Agreements,Assistant Project Manager,252.747,14.87179487
+Wind >=50MW SPP,6. Land Agreements,New Business Manager,275.724,30.76923077
+Wind >=50MW SPP,6. Land Agreements,Project Manager,264.2355,27.17948718
+Wind >=50MW SPP,7. Layout Support & Modelling,Assistant Project Manager,421.245,14.87179487
+Wind >=50MW SPP,7. Layout Support & Modelling,Civil Engineer,42.1245,14.92307692
+Wind >=50MW SPP,7. Layout Support & Modelling,Electrical Engineer,421.245,14.92307692
+Wind >=50MW SPP,7. Layout Support & Modelling,Energy Yield Engineer,344.655,14.92307692
+Wind >=50MW SPP,7. Layout Support & Modelling,Project Manager,440.3925,27.17948718
+Wind >=50MW SPP,7. Layout Support & Modelling,Senior C&I Engineer,330.294375,26.15384615
+Wind >=50MW SPP,7. Layout Support & Modelling,Senior Electrical Engineer,66.058875,26.15384615
+Wind >=50MW SPP,7. Layout Support & Modelling,Senior Project Manager,229.77,31.7948718
+Wind >=50MW SPP,8. Contract Tendering & Design,Assistant Project Manager,210.6225,14.87179487
+Wind >=50MW SPP,8. Contract Tendering & Design,Civil Engineer,210.6225,14.92307692
+Wind >=50MW SPP,8. Contract Tendering & Design,Electrical Engineer,421.245,14.92307692
+Wind >=50MW SPP,8. Contract Tendering & Design,Energy Yield Engineer,689.31,14.92307692
+Wind >=50MW SPP,8. Contract Tendering & Design,Project Manager,440.3925,27.17948718
+Wind >=50MW SPP,8. Contract Tendering & Design,Senior C&I Engineer,220.19625,26.15384615
+Wind >=50MW SPP,8. Contract Tendering & Design,Senior Electrical Engineer,220.19625,26.15384615
+Wind >=50MW SPP,8. Contract Tendering & Design,Senior Project Manager,114.885,31.7948718
+Wind >=50MW SPP,9. Construction & Commissioning,Assistant Project Manager,3369.96,14.87179487
+Wind >=50MW SPP,9. Construction & Commissioning,Civil Engineer,84.249,14.9230769
+Wind >=50MW SPP,9. Construction & Commissioning,Electrical Engineer,1684.98,14.9230769
+Wind >=50MW SPP,9. Construction & Commissioning,Energy Yield Engineer,516.9825,14.9230769
+Wind >=50MW SPP,9. Construction & Commissioning,Project Manager,3523.14,27.17948718
+Wind >=50MW SPP,9. Construction & Commissioning,Senior C&I Engineer,1100.98125,26.15384615
+Wind >=50MW SPP,9. Construction & Commissioning,Senior Electrical Engineer,1541.37375,26.15384615
+Wind >=50MW SPP,9. Construction & Commissioning,Senior Project Manager,1378.62,31.7948718
