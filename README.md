@@ -9,7 +9,7 @@ To begin with, there is a huge gap between staff required and present staff numb
 
 Thus, my focus shifted toward looking at an optimal solution first based on present staff numbers and using that as a baseline for future development of projects. Furthermore, I believe out optimization methodology can be used company wide, to account for project feasibility, for staffing resource optimization, and in choosing long term projects. 
 
-# Our Methodology 
+# My Methodology 
 
 I have already established the potential energy capacity that can be produced out of each of the renewable site, and the staffing hours required out of each of the roles for each of the different technologies, namely BESS SPP, Solar, Wind plants with less than 50 MW capacity, and Wind plants with more than 50 MW capacity. Here, the staffing requirements is only a function of the type of technology employed, and unaffected by the size of the project. Interestingly, I find that the number of managerial hours required in Wind projects is much more than for Solar and BESS (see Figure 7). Wind technologies with more than 50 MW capacity demand the most staff hours from all job roles, while I have also seen they are among the highest electricity producers. Additionally, taking energy capacity into our model at this stage is counterintuitive, as we won’t be able to do linear programming (since for the same staffing inputs for each technology, given everything else as constant, our data suggests different outputs in terms of energy production). Thus, I will account for energy capacities at a later stage in the model. 
 
